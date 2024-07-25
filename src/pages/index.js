@@ -1,8 +1,33 @@
+import { useState } from 'react';
+import Head from 'next/head';
+
+import { RoomAllocation, RoomRequest } from '@/components';
+import { AppLayout } from '@/layouts';
+
 const Home = () => {
+  const [request, setRequest] = useState();
+  const { rooms, ...guest } = request ?? {};
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      main
-    </main>
+    <>
+      <Head>
+        <title>ROOME</title>
+      </Head>
+      <main className="flex size-full min-h-screen items-center justify-center p-4 md:p-8">
+        <AppLayout>
+          {request ? (
+            <RoomAllocation
+              guest={guest}
+              rooms={rooms}
+              // onChange={(res) => console.log(res)}
+              onCancel={() => setRequest()}
+            />
+          ) : (
+            <RoomRequest onSubmit={setRequest} />
+          )}
+        </AppLayout>
+      </main>
+    </>
   );
 };
 
