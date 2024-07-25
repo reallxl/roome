@@ -46,10 +46,11 @@ export const getDefaultRoomAllocation = ({ adult, child }, rooms) => {
   tryArrangeToRoom(adult, child, []);
 
   return (
-    bestArragement?.map(([adult, child, price]) => ({
+    bestArragement?.map(([adult, child, price], index) => ({
       adult,
       child,
       price,
+      ...rooms[index],
     })) ?? []
   );
 };
