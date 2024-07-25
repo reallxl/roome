@@ -61,7 +61,7 @@ const RoomAllocation = ({ guest, rooms, onChange, onCancel }) => {
               remaining={remainingGuest}
               onChange={getHandleChangeRoomArrangement(index)}
             />
-            <hr className="mt-4" />
+            <hr className="my-4" />
           </div>
         ))}
       </div>
