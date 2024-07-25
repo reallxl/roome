@@ -31,11 +31,11 @@ const RoomRequest = ({ onSubmit }) => {
   };
 
   const renderRoomSettingField = () => (
-    <div className="flex w-full items-center justify-between gap-2">
+    <div className="flex h-px w-full grow items-center justify-between gap-2">
       <label>房間：</label>
-      <div className="w-px grow">
+      <div className="h-full w-px grow">
         <textarea
-          className="min-h-[50vh] w-full resize-none rounded-md bg-secondary p-2 md:min-h-[33vh]"
+          className="size-full resize-none rounded-md bg-secondary p-2"
           placeholder={JSON.stringify(TEST_SETS[0].rooms)}
           ref={ref}
         />
