@@ -13,7 +13,7 @@ const Home = () => {
       <Head>
         <title>ROOME</title>
       </Head>
-      <main className="flex size-full min-h-screen items-center justify-center p-4 md:p-8">
+      <main className="flex size-full items-center justify-center p-4 md:p-8">
         <AppLayout>
           {request ? (
             <RoomAllocation
