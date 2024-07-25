@@ -1,3 +1,3 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Live on: [https://roome-lchuquoqb-reallxls-projects.vercel.app](https://roome-lchuquoqb-reallxls-projects.vercel.app)
+Live on: [https://roome-tau.vercel.app/](https://roome-tau.vercel.app/)
