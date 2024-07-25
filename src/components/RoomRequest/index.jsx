@@ -13,11 +13,11 @@ const RoomRequest = ({ onSubmit }) => {
       <label>{label}</label>
       <CustomInputNumber
         value={value}
-        onChange={({ target: { value } }) => setValue(value)}
+        onChange={({ target: { value } }) => setValue(+value)}
       />
     </div>
   );
-
+  console.log(adult, child);
   const handleSelectPreset = ({ target: { id } }) => {
     const {
       adult: _adult,
